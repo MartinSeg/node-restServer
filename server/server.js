@@ -14,7 +14,7 @@ mongoose
     useUnifiedTopology: true,
     useFindAndModify: false,
   })
-  .then(console.log("Base de datos correctamente"))
+  .then(console.log("Base de datos correctament"))
   .catch((e) => console.log(e));
 
 app.listen(process.env.PORT, () => {
