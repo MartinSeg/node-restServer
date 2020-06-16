@@ -69,7 +69,7 @@ app.delete("/usuario/:id", [verificaToken, verificaAdmin_role], (req, res) => {
     { new: true },
     ( err, usuarioBorrado ) => {
       if (err) {
-        return res.status(400).json({ ok: false, err:{message: " no existe tal ID"} });
+        return res.status(500).json({ ok: false, err:{message: "Internal Server Error"} });
       }
 
       if (!usuarioBorrado) {

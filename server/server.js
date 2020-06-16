@@ -2,12 +2,14 @@ require("./config/config");
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const path = require('path')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(require("./routes"));
 
-
+//Habilitar la carpeta Public
+app.use( express.static(path.resolve(__dirname, '../public')))
 
 mongoose
   .connect(process.env.URLDB, {
