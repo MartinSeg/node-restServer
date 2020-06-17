@@ -22,4 +22,4 @@ process.env.CADUCIDAD_TOKEN = '720h';
 process.env.SEED = process.env.SEED || "este-es-el-seed-de-desarrollo";
 
 //Google Client ID
-process.env.CLIENT_ID = process.env.CLIENT_ID || "404075729198-ptubn75gcrnd5svctlclucifpoaf93nu.apps.googleusercontent.com"
+process.env.CLIENT_ID = process.env.CLIENT_ID || "404075729198-569vq0jl8c7rven3ne06tfdn4f23kgmp.apps.googleusercontent.com"
